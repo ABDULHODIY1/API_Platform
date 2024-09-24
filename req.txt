@@ -1,0 +1,6 @@
+djangorestframework==3.15.2
+Django==5.0.7
+pillow
+djangorestframework-simplejwt
+django-phonenumber-field==8.0.0
+phonenumbers==8.13.45

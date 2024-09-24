@@ -1,0 +1,78 @@
+nav {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    nav ul li:not(:last-child) {
+      margin-right: 40px; }
+    nav ul li a {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: .025em;
+      text-decoration: none;
+      color: var(--c, #BBC1E1);
+      transition: color .3s ease; }
+      nav ul li a:hover {
+        --c: #fff; }
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section > span {
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff; }
+  section > div > span {
+    display: table;
+    background: #1A1E32;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #646B8C;
+    margin-top: 20px; }
+    section > div > span a {
+      text-decoration: none;
+      color: var(--c, #A6ACCD);
+      transition: color .3s ease; }
+      section > div > span a:hover {
+        --c: #fff; }
+
+pre code {
+  font-family: 'Fira Mono';
+  color: #BBC1E1;
+  line-height: 1.4;
+  font-size: 12px; }
+  pre code .token.function {
+    color: #5C86FF; }
+  pre code .token.string {
+    color: #CB7DD0; }
+  pre code .token.parameter {
+    color: #C4DDB2; }
+
+#section-1,
+#section-3 {
+  background: #0B0D19; }
+
+#section-2 {
+  background: #131524; }
+
+body {
+  font-family: 'Roboto', Arial; }
+  body .twitter {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px; }
+    body .twitter svg {
+      width: 24px;
+      height: 24px;
+      fill: white; }
