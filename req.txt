@@ -1,6 +1,17 @@
-djangorestframework==3.15.2
+# Django va Django bilan bog'liq kutubxonalar
 Django==5.0.7
-pillow
-djangorestframework-simplejwt
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+django-modeltranslation==0.19.6
 django-phonenumber-field==8.0.0
-phonenumbers==8.13.45
+
+# Boshqa foydali kutubxonalar
+SQLAlchemy==2.0.34
+alembic==1.13.2
+bcrypt==4.2.0
+cryptography==43.0.0
+PyJWT==2.8.0
+beautifulsoup4==4.12.3
+requests==2.32.3
+pillow==10.4.0
+debugpy==1.8.5

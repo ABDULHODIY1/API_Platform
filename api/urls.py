@@ -53,10 +53,10 @@ router.register(r'some-models', SomeModelViewSet, basename='some-models')
 
 urlpatterns = [
     path('', include(router.urls),name='api-root'),
-    path('api/v1/register/', UserRegistrationView.as_view(), name='user-registration'),
-    path('api/v1/login/', UserLoginViewSet.as_view({'post': 'create'}), name='user-login'),
-    path('api/v1/logout/', UserLogoutViewSet.as_view({'post': 'create'}), name='user-logout'),
-    path('api/v1/change-password/', ChangePasswordViewSet.as_view({'post': 'create'}), name='change-password'),
-    path('api/v1/password-reset-request/', PasswordResetRequestViewSet.as_view({'post': 'create'}), name='password-reset-request'),
-    path('api/v1/password-reset/', PasswordResetViewSet.as_view({'post': 'create'}), name='password-reset'),
+    path('register/', UserRegistrationView.as_view(), name='user-registration'),
+    path('login/', UserLoginViewSet.as_view({'post': 'create'}), name='user-login'),
+    path('logout/', UserLogoutViewSet.as_view({'post': 'create'}), name='user-logout'),
+    path('change-password/', ChangePasswordViewSet.as_view({'post': 'create'}), name='change-password'),
+    path('password-reset-request/', PasswordResetRequestViewSet.as_view({'post': 'create'}), name='password-reset-request'),
+    path('password-reset/', PasswordResetViewSet.as_view({'post': 'create'}), name='password-reset'),
 ]

@@ -1,0 +1,14 @@
+url["*"]
+
+"SLD Starter";
+"file_runner{manage.py}":command{runserver};
+
+register(
+commands:{
+python manage.py makemigrations
+}
+end_command{
+python manage.py migrate
+}
+)
+http://13.61.10.12:8000/api/v1/foods/

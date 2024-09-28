@@ -8,3 +8,6 @@ pic.svg
 th.html
 .git
 config/.DS_Store
+.idea
+.DS_Store
+frombook.py

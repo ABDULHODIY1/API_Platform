@@ -163,6 +163,7 @@ class Food(models.Model):
     description = models.TextField()               # Retsept haqida qisqacha tavsif
     ingredients = models.TextField()               # Ingredientlar ro'yxati
     instructions = models.TextField()              # Tayyorlanish bosqichlari
+    video_url = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.name
